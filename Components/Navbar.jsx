@@ -1,46 +1,14 @@
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  Input,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
-} from "@nextui-org/react";
-import React from "react";
+'use client'
+import React from 'react'
+// import { IoIosNotificationsOutline } from 'react-icons/io'
+// import { IoSunnyOutline, IoMoonOutline, IoSearchOutline}   from 'react-icons/io5'
 
 const Navigation = () => {
   return (
-    <div>
-      <Navbar isBordered>
-        <NavbarContent justify="start">
-          <NavbarBrand>
-            <h1 className="text-2xl justify-start flex">Research</h1>
-          </NavbarBrand>
-          <NavbarContent as="div">
-            <Input placeholder="Type to Search....." size="md" />
-          </NavbarContent>
-          <Dropdown>
-            <DropdownTrigger>
-              <Avatar
-                isBordered
-                as="button"
-                color="secondary"
-                size="sm"
-                className="transition transform"
-              />
-            </DropdownTrigger>
-
-            <DropdownMenu>
-              <DropdownItem>My settings</DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
-        </NavbarContent>
-      </Navbar>
+    <div className="bg-purple-500">
+      outlet
     </div>
   );
-};
+}
 
-export default Navigation;
+export default Navigation

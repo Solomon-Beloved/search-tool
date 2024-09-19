@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "var( --black-gradient)",
         foreground: "var(--foreground)",
       },
     },
