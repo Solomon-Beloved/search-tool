@@ -1,42 +1,51 @@
 import {
-  MdAnalytics,
+  // MdAnalytics,
   MdAttachMoney,
   MdDashboard,
   MdHelpCenter,
   MdOutlineSettings,
-  MdPeople,
+  // MdPeople,
   MdShoppingBag,
   MdSupervisedUserCircle,
-  MdWork,
+  // MdWork,
 } from "react-icons/md";
 export const menu = [
-  {
-    list: [
+  
       {
         title: "Dashboard",
         path: "/Dashboard",
         icon: <MdDashboard />,
       },
-    //   {
-    //     title: "Users",
-    //     path: "/Dashboard/Users",
-    //     icon: <MdSupervisedUserCircle />,
-    //   },
-     
-     
       {
-        title: "Help",
-        path: "/dashboard/help",
-        icon: <MdHelpCenter />,
+        title: "Users",
+        path: "/Dashboard/Users",
+        icon: <MdSupervisedUserCircle />,
+      },
+      {
+        title: "Products",
+        path: "/Dashboard/Products",
+        icon: <MdShoppingBag />,
+      },
+      {
+        title: "Transactions",
+        path: "/Dashboard/transactions",
+        icon: <MdAttachMoney />,
       },
       {
         title: "Settings",
         path: "/dashboard/settings",
         icon: <MdOutlineSettings />,
       },
-    ],
-  },
-];
+      {
+        title: "Help",
+        path: "/dashboard/help",
+        icon: <MdHelpCenter />,
+      },
+    ]
+
+
+ 
+
 
 export const footer = [
   {
